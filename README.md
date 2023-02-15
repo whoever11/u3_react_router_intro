@@ -189,7 +189,7 @@ return (
   
   <Routes>
   
-    <Route exact path="/" element={<Home userName={userName}>} />
+    <Route  path="/" element={<Home userName={userName}>} />
   
   </Routes>
 
