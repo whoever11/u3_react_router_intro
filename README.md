@@ -164,7 +164,7 @@ Well we're about 90% there. All we need to do is add in our Routes. It follows a
 
 ```
 
-<Route exact path="/componentA" element={ComponentA} />
+<Route path="/componentA" element={<ComponentA/>} />
 
 ```
    
