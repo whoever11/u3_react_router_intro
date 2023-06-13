@@ -1,4 +1,4 @@
-### SEIR 123
+### SEIR 0508
 
 # React Router
 
@@ -24,6 +24,7 @@ changing up as needed for ComponentA and for the Home files.
 
 We are going to nest our Header and Main components inside of App.js, and nest Nav inside of our header. Home, Components A and B we will work with shortly. 
 
+
 Now, we can begin
 
 ### Installation
@@ -32,9 +33,8 @@ Because of its power and (relative) ease of use, the React Router is one of the 
 
 To install the React Router, go into your root directory (the one that contains our Package.json) and enter the following command
 
-```
+```sh
 npm i react-router-dom
-
 ```
 
 When you open up your Package.json file, you should now see "React-router-dom"  right under the "React" package.
