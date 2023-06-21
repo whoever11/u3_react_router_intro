@@ -141,7 +141,7 @@ Back to Main.js!
 All Routes (singular) need to be wrapped in a Routes (plural) tag. Its going to look something like this:
 
 ```jsx
-import { Route, Routes } from 'react-router-dom
+import { Route, Routes } from 'react-router-dom'
 
 
 const Main = () => {
