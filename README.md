@@ -12,10 +12,10 @@ Main.jsx, Header.jsx, Nav.jsx, Home.jsx, ComponentA.jsx, and ComponentB.jsx
 
 Populate our Home and component files to have them say their names, something like
 
-```
+```jsx
 const ComponentB = () => {
-return <h2> I am Component B </h2>
-}
+  return <h2> I am Component B </h2>
+  }
 
 export default ComponentB
 ```
@@ -42,7 +42,7 @@ When you open up your Package.json file, you should now see "React-router-dom"  
 ### Set Up
 
 Before we do anything in our components, we will have to add in some instructions to our index.js file. 
-We will first import the React Router Dom package, which we will call BrowserRouter, and then we will wrap up our App component inside of it. Because we want to take everything from the BrowserRouter, we will deconstruct it when we import it. Lets add the following to our Index.js file
+We will first import the React Router Dom package, which we will call BrowserRouter, and then we will wrap up our App component inside of it. Because we want to take everything from the BrowserRouter, we will deconstruct it when we import it. Lets add the following to our main.js file
 
 ```
 import { BrowserRouter } from 'react-router-dom'
@@ -50,7 +50,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 And lets make an App sandwich on BrowserRouter bread. We can keep the React.StrictMode blocks as well, just make sure they are outside of our BrowserRouter
 
-```index.js
+```main.js
   <React.StrictMode>
     <BrowserRouter>
       <App>
@@ -82,8 +82,7 @@ import { Link } from 'react-router-dom'
 
 Then, we can create our Links. These follow a standard syntax that looks something like this
 
-```
-
+```jsx
 <Link to="/componentA">
    <h2> Component A </h2>
 </Link>
@@ -97,7 +96,7 @@ Using our Component A link syntax, can you deduce what our Home and Component B 
 
 Our Nav.jsx file should look something like this
 
-```js
+```jsx
 
 import { Link } from 'react-router-dom'
 
@@ -122,7 +121,7 @@ But let's not get too far ahead of ourselves yet, after our Links, we need some 
 
 Lets start by importing in Route and Routes into our component. Noticing a pattern here? 
 
-```js
+```jsx
  
 import { Route, Routes} from 'react-router-dom'
 
@@ -141,7 +140,7 @@ Back to Main.js!
 
 All Routes (singular) need to be wrapped in a Routes (plural) tag. Its going to look something like this:
 
-```js
+```jsx
 import { Route, Routes } from 'react-router-dom
 
 
@@ -179,7 +178,7 @@ Load up your React server and lets see these in action!
 Using Props in our Routes follows a similar pattern to our standard components
 
 
-```Main.js
+```Main.jsx
 
 const Main = () => {
 
